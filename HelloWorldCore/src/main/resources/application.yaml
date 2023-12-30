@@ -1,0 +1,22 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  datasource:
+    url: jdbc:mysql://host.docker.internal:3306/matching_script_test_db
+    username: root
+    password: root
+    hikari:
+      minimumIdle: 10
+      maximumPoolSize: 60
+      idleTimeout: 120000
+      connectionTimeout: 300000
+      leakDetectionThreshold: 300000
+
+#kafka:
+#  bootstrapServers:
+#    fileManagement: host.docker.internal:29092
+#  topics:
+#    fileManagement:
+#      fileProcessingStatus:
+#        topicName: "FILE_PROCESSING_STATUS"

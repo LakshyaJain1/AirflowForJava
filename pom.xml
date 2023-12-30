@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <modules>
-        <module>api</module>
-        <module>base</module>
-        <module>scheduler</module>
+        <module>HelloWorldService</module>
+        <module>HelloWorldCore</module>
+        <module>HelloWorldJobs</module>
     </modules>
 
     <parent>
